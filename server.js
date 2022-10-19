@@ -563,7 +563,7 @@ const viewBudget = () => {
       `;
       db.query(query, [response.id], (err, res) => {
         if (err) throw err;
-        console.table(res);
+        consoleclear.table(res);
         startPrompt();
       });
     })
